@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/digital-notice-board/static/css/main.f83d43ae.css",
+    "main.js": "/digital-notice-board/static/js/main.b83dbae6.js",
+    "static/js/453.16988152.chunk.js": "/digital-notice-board/static/js/453.16988152.chunk.js",
+    "static/media/logo.png": "/digital-notice-board/static/media/logo.f16419a6435af92bc58f.png",
+    "index.html": "/digital-notice-board/index.html",
+    "main.f83d43ae.css.map": "/digital-notice-board/static/css/main.f83d43ae.css.map",
+    "main.b83dbae6.js.map": "/digital-notice-board/static/js/main.b83dbae6.js.map",
+    "453.16988152.chunk.js.map": "/digital-notice-board/static/js/453.16988152.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f83d43ae.css",
+    "static/js/main.b83dbae6.js"
+  ]
+}
