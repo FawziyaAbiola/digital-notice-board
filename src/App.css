@@ -1,38 +1,179 @@
-.App {
+/* Background & font */
+body {
+  background: linear-gradient(to right, #f0f4ff, #e0eaff);
+  font-family: 'Inter', sans-serif; /* Make sure to import the font in index.html */
+}
+
+/* Headings */
+h2, h3 {
+  color: #1a73e8;
+  font-weight: 700;
+}
+
+/* Card styling */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Announcement fade-in animation */
+.announcement-card {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  border-radius: 25px;
+  background: linear-gradient(90deg, #1a73e8, #4285f4);
+  border: none;
+  font-weight: bold;
+}
+
+/* Form container */
+.form-container {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+/* hero */
+.app-hero {
+  background: linear-gradient(90deg,#f6f8ff 0%, #eef6ff 100%);
+  border-bottom: 1px solid rgba(26,115,232,0.06);
+}
+
+/* placeholder hero banner for cards */
+.card-hero-placeholder {
+  background: linear-gradient(135deg, #7c4dff, #1a73e8);
+  height: 140px;
+  color: white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* notice card */
+.notice-card { cursor: pointer; transition: transform .25s ease, box-shadow .25s ease; }
+.notice-card:hover { transform: translateY(-6px); box-shadow: 0 16px 30px rgba(15,23,42,0.12); }
+
+.notice-card .card-title { font-size: 1.1rem; }
+.notice-card .card-text { font-size: .94rem; }
+
+/* form container if used */
+.form-container { padding: 1.6rem; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(12,32,63,0.06); }
+
+/* subtle button */
+.btn-outline-primary { border-radius: 999px; padding: .35rem .9rem; }
+
+/* responsive tweaks */
+@media (max-width: 576px) {
+  .notice-card { width: 100% !important; }
+}
+
+/* badge color overrides for contrast */
+.badge.bg-primary { background:#1a73e8; }
+.badge.bg-success { background:#2cae6a; }
+
+.logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+.app-hero {
+  background: linear-gradient(135deg, #f8faff, #eef3ff);
+}
+/* LOGO */
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* NAV LINKS */
+.nav-link {
+  font-weight: 500;
+  color: #555;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+.active-link {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #0d6efd;
+}
+
+/* HERO */
+/* .page-hero {
+  background: linear-gradient(135deg, #f8faff, #eef3ff);
+  padding: 45px 0;
+  border-bottom: 1px solid #e5e9f2;
+} */
+.page-hero {
+  background: linear-gradient(90deg, #1a73e8, #4285f4);
+  color: #fff;
+  padding: 60px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-hero p {
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+.announcement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+.announcement-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.announcement-form .btn-primary {
+  background-color: #1a73e8;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.announcement-form .btn-primary:hover {
+  background-color: #4285f4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-primary {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a73e8; /* override if you want a custom color */
 }
