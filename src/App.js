@@ -11,7 +11,8 @@ import './App.css';
 const staticAnnouncement = {
   id: 0,
   title: 'Welcome to the Digital Notice Board!',
-  description: 'This platform allows you to view all academic, event, and administrative announcements. Stay tuned for updates!',
+  description:
+    'This platform allows you to view all academic, event, and administrative announcements. Stay tuned for updates!',
   category: 'General',
   date: new Date().toISOString().split('T')[0],
 };
@@ -27,7 +28,7 @@ function App() {
   }, [announcements]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
         <Route
@@ -36,7 +37,12 @@ function App() {
         />
         <Route
           path="/post"
-          element={<PostAnnouncement announcements={announcements} setAnnouncements={setAnnouncements} />}
+          element={
+            <PostAnnouncement
+              announcements={announcements}
+              setAnnouncements={setAnnouncements}
+            />
+          }
         />
       </Routes>
     </Router>

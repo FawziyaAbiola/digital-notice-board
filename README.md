@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# Digital Notice Board
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based Digital Notice Board developed with React to display and manage academic, event, and administrative announcements for students. The application allows users to view announcements on a dashboard and authorized users to post new announcements.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## 🚀 Live Demo
+🔗 https://fawziyaabiola.github.io/digital-notice-board/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## 🛠️ Technologies Used
+- **React (Create React App)**
+- **React Router DOM**
+- **Bootstrap & React-Bootstrap**
+- **JavaScript (ES6)**
+- **HTML5 & CSS3**
+- **Local Storage** (for data persistence)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
+- View all announcements on a dashboard
+- Search announcements by title or description
+- Filter announcements by category
+- Post new announcements
+- Automatically displays the current date when posting
+- Announcements persist using browser local storage
+- Responsive user interface
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 📂 Project Structure
+```digital-notice-board/
+│
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── data/
+│ ├── App.js
+│ ├── index.js
+│ └── App.css
+│
+├── public/
+├── package.json
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Installation & Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+```bash
+git clone https://github.com/<your-github-username>/digital-notice-board.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+2. Navigate to the project folder:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```cd digital-notice-board
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install dependencies:
 
-### Code Splitting
+```npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Run the app locally:
+```
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 Deployment
 
-### Advanced Configuration
+The project is deployed using GitHub Pages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To deploy:
 
-### Deployment
+```
+npm run build
+npm run deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+## 📌 Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Dashboard displays all announcements
+
+The Post Announcement page allows adding new announcements
+
+Dates are automatically generated based on the posting time
+
+Data is stored locally in the browser
+
+## 👥 Collaboration
+
+This project supports collaboration via GitHub. Collaborators can:
+
+Clone the repository
+
+Create branches
+
+Commit and push changes
+
+Submit pull requests
+
+📚 Course Information
+
+Course: React js
+Project Type: Mini Project
+Level: 200 Level
+Institution: Bells University of Technology
+
+📝 Author
+
+Name: Abiola Fawziya Aderiike
+
+Department: Information Technology
+
+University: Bells University of Technology
+
+📜 License
+
+This project is for academic purposes only.
