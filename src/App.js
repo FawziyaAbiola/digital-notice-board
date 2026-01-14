@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Dashboard from './pages/Dashboard';
 import PostAnnouncement from './pages/PostAnnouncement';
@@ -31,26 +31,22 @@ function App() {
     <Router>
       <Header />
       <Routes>
+  <Route
+    path="/"
+    element={<Dashboard announcements={announcements} />}
+  />
 
-        {/* Redirect root to dashboard */}
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+  <Route
+    path="/post"
+    element={
+      <PostAnnouncement
+        announcements={announcements}
+        setAnnouncements={setAnnouncements}
+      />
+    }
+  />
+</Routes>
 
-        <Route
-          path="/dashboard"
-          element={<Dashboard announcements={announcements} />}
-        />
-
-        <Route
-          path="/post"
-          element={
-            <PostAnnouncement
-              announcements={announcements}
-              setAnnouncements={setAnnouncements}
-            />
-          }
-        />
-
-      </Routes>
     </Router>
   );
 }
