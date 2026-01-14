@@ -62,7 +62,10 @@ git clone https://github.com/<your-github-username>/digital-notice-board.git
 
 Install dependencies:
 
-```npm install
+```
+
+npm install
+
 ```
 
 
@@ -117,6 +120,8 @@ Institution: Bells University of Technology
 📝 Author
 
 Name: Abiola Fawziya Aderiike
+
+Team members:Afolayhan Aaliyah, Enenmoh Shekinah Chisomnazu, Tanko Zainab Medinatu, Olowogboye Abdullah Oluwatomisin
 
 Department: Information Technology
 
