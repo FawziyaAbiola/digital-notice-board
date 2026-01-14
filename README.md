@@ -57,7 +57,9 @@ git clone https://github.com/<your-github-username>/digital-notice-board.git
 
 2. Navigate to the project folder:
 
-```cd digital-notice-board
+```
+cd digital-notice-board
+
 ```
 
 Install dependencies:
