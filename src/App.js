@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Dashboard from './pages/Dashboard';
 import PostAnnouncement from './pages/PostAnnouncement';
@@ -28,13 +28,18 @@ function App() {
   }, [announcements]);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Header />
       <Routes>
+
+        {/* Redirect root to dashboard */}
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+
         <Route
-          path="/"
+          path="/dashboard"
           element={<Dashboard announcements={announcements} />}
         />
+
         <Route
           path="/post"
           element={
@@ -44,6 +49,7 @@ function App() {
             />
           }
         />
+
       </Routes>
     </Router>
   );

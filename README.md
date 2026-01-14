@@ -51,7 +51,7 @@ A web-based Digital Notice Board developed with React to display and manage acad
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/<your-github-username>/digital-notice-board.git
+git clone https://github.com/FawziyaAbiola/digital-notice-board.git
 
 ```
 
